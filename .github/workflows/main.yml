@@ -31,6 +31,8 @@ jobs:
 
       - name: Build project
         run: npm run build   # 👈 uses your "build" script
+      - name: host project
+        run: npm run preview
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
