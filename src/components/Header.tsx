@@ -54,7 +54,7 @@ const Header = () => {
                 size="lg"
                 className="bg-white/20 text-white border-white/30 hover:bg-white/30 transition-smooth"
               >
-                <a href="../docs/cv/chathura-rajapakse-resume.pdf" download>
+                <a href={`${import.meta.env.BASE_URL}/docs/cv/chathura-rajapakse-resume.pdf`} download>
                 <Download size={18} className="mr-2" />
                 Download CV
                 </a>
@@ -65,7 +65,7 @@ const Header = () => {
             {/* Right side - Photo placeholder */}
             <div className="flex-shrink-0">
               <Avatar className="w-48 h-48 border-4 border-white/20">
-                <AvatarImage src="../docs/images/cv-photo.png" alt="Chathura Rajapakse" />
+                <AvatarImage src={`${import.meta.env.BASE_URL}/docs/images/cv-photo.png`} alt="Chathura Rajapakse" />
                 <AvatarFallback className="text-6xl font-bold bg-white/10 text-white">
                   CR
                 </AvatarFallback>
