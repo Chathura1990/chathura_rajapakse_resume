@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
- base: process.env.NODE_ENV === 'production' ? '/chathura_rajapakse_resume/' : '/',
+ base: '/chathura_rajapakse_resume/',
   build: {
     outDir: 'dist',
   },

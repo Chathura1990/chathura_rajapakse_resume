@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://chathura-rajapakse.github.io/chathura_rajapakse_resume/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
