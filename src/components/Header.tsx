@@ -2,6 +2,7 @@ import { Mail, Phone, Linkedin, Github, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
+const BASE_URL = import.meta.env.VITE_BASE_URL || '/chathura_rajapakse_resume/';
 const Header = () => {
   return (
     <header className="relative overflow-hidden bg-gradient-to-br from-cv-primary via-cv-primary-light to-cv-accent text-white">
@@ -54,7 +55,7 @@ const Header = () => {
                 size="lg"
                 className="bg-white/20 text-white border-white/30 hover:bg-white/30 transition-smooth"
               >
-                <a href="./chathura_rajapakse_resume/docs/cv/chathura-rajapakse-resume.pdf" download>
+                <a href={`${import.meta.env.VITE_BASE_URL}/docs/cv/chathura-rajapakse-resume.pdf`} download>
                 <Download size={18} className="mr-2" />
                 Download CV
                 </a>
@@ -64,12 +65,12 @@ const Header = () => {
             
             {/* Right side - Photo placeholder */}
             <div className="flex-shrink-0">
-              <Avatar className="w-48 h-48 border-4 border-white/20">
-                <AvatarImage src="./chathura_rajapakse_resume/docs/images/cv-photo.png" alt="Chathura Rajapakse" />
+                <Avatar className="w-48 h-48 border-4 border-white/20">
+                <AvatarImage src={`${import.meta.env.VITE_BASE_URL}/docs/images/cv-photo.png`} alt="Chathura Rajapakse" />
                 <AvatarFallback className="text-6xl font-bold bg-white/10 text-white">
                   CR
                 </AvatarFallback>
-              </Avatar>
+                </Avatar>
             </div>
           </div>
         </div>
